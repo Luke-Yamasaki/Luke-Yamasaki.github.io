@@ -1,7 +1,7 @@
 const animation = bodymovin.loadAnimation({
     container: document.getElementById("anim"),
     renderer: "svg",
-    loop: true,
+    loop: false,
     autoplay: true,
     path: "data.json"
 })

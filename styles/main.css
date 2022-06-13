@@ -1,0 +1,68 @@
+html {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(25, 25, 25);
+}
+
+@keyframes disappear {
+    0% {
+        width: 100vw;
+        height: 100vh;
+    }
+    80% {
+        width: 100vw;
+        height: 100vh;
+    }
+    100% {
+        width: 0px;
+        height: 0px;
+        display: none;
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0%;
+    }
+    90% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+#anim {
+    margin: 0px;
+    padding: 0px;
+    animation: 5s disappear forwards;
+}
+
+#greetBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+#welcome {
+    color: white;
+    font-size: 75px;
+    font-family: sans-serif;
+}
+
+#delayedGreet {
+    color: white;
+    font-size: 75px;
+    font-family: sans-serif;
+    animation: 6s appear forwards;
+}

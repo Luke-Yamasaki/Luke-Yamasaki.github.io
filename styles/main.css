@@ -165,16 +165,26 @@ main {
     align-items: center;
     justify-content: flex-start;
     gap: 10px;
-    width: 100%;
+    width: 90%;
 }
 
 #welcome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 20vw;
+    max-height: 300px;
     color: white;
-    font-size: clamp(21px, 50%,75px);
+    font-size: clamp(3vw, 5vw, 75px);
 }
 
 #delayedGreet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 60vw;
+    max-height: 300px;
     color: white;
-    font-size: clamp(21px, 50%,75px);
+    font-size: clamp(3vw, 5vw, 75px);
     animation: 6s appear forwards;
 }

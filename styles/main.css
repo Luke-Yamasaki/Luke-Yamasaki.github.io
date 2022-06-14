@@ -12,6 +12,73 @@ body {
     background-color: rgba(25, 25, 25);
 }
 
+@keyframes welcome {
+    0% {
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    80% {
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    100% {
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+}
+
+#landing {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    animation: welcome 6s forwards;
+}
+
+nav {
+    width: calc(100vw - 100px);
+    max-width: 1920px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 50px 5px 50px;
+    background-color: white;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#logo {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logoType {
+    font-family: 
+}
+
+#navItem {
+
+}
+
 @keyframes disappear {
     0% {
         width: 100vw;
@@ -22,7 +89,7 @@ body {
         height: 100vh;
     }
     100% {
-        width: 0px;
+        width: 100vw;
         height: 0px;
         display: none;
     }
@@ -32,7 +99,7 @@ body {
     0% {
         opacity: 0%;
     }
-    90% {
+    85% {
         opacity: 0%;
     }
     100% {

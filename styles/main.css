@@ -39,7 +39,7 @@ body {
     animation: welcome 6s forwards;
 }
 
-nav {
+.welcomeNav {
     width: calc(100vw - 100px);
     height: 40px;
     display: flex;
@@ -50,7 +50,7 @@ nav {
     border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
 
-ul {
+.welcomeList {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -61,7 +61,7 @@ ul {
     height: 100%;
 }
 
-li {
+.welcomeItem {
     display: flex;
     align-items: center;
     list-style: none;

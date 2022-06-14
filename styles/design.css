@@ -106,50 +106,73 @@ li {
 }
 
 .projectBox {
-    width: 75%;
-    height: 60%;
+    width: clamp(300px, 60vw, 800px);
+    height: clamp(300px, 50vw, 600px);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 10px;
 }
 
-.projectLinks {
-    grid-row: 1;
-    grid-column: 1;
+.designProject {
+    width: clamp(150px, calc(30vw - 10px), 400px);
+    height: clamp(150px, calc(30vw - 10px), 300px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 5px;
 }
 
-.projectLinks:hover {
+.designOne:hover {
+    content: "Ark";
     background-color: rgba(0, 0, 0, 0.75);
-    position: absolute;
     z-index: 50;
 }
 
-.linkOne:hover:after {
+.designTwo:hover {
+    content: "Peer Review";
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 50;
+}
+
+.designThree:hover {
+    content: "Klicko";
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 50;
+}
+
+.designFour:hover {
+    content: "Mock Olympics";
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 50;
+}
+
+.designOne:hover:after {
     content: "Ark";
     position: absolute;
     z-index: 51;
 }
 
-.linkTwo:hover:after {
+.designTwo:hover:after {
     content: "Peer Review";
     position: absolute;
     z-index: 51;
 }
 
-.linkThree:hover:after {
+.designThree:hover:after {
     content: "Klicko";
     position: absolute;
     z-index: 51;
 }
 
-.linkFour:hover:after {
+.designFour:hover:after {
     content: "Mock Olympics";
     position: absolute;
     z-index: 51;
 }
 
 .projectImages {
-    max-width: 100%;
-    max-height: 100%;
+    width: 100px;
+    height: 100px;
 }

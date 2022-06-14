@@ -95,3 +95,61 @@ li {
     align-items: center;
     color: white;
 }
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: calc(100vh - 50px);
+}
+
+.projectBox {
+    width: 75%;
+    height: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.projectLinks {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.projectLinks:hover {
+    background-color: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    z-index: 50;
+}
+
+.linkOne:hover:after {
+    content: "Ark";
+    position: absolute;
+    z-index: 51;
+}
+
+.linkTwo:hover:after {
+    content: "Peer Review";
+    position: absolute;
+    z-index: 51;
+}
+
+.linkThree:hover:after {
+    content: "Klicko";
+    position: absolute;
+    z-index: 51;
+}
+
+.linkFour:hover:after {
+    content: "Mock Olympics";
+    position: absolute;
+    z-index: 51;
+}
+
+.projectImages {
+    max-width: 100%;
+    max-height: 100%;
+}

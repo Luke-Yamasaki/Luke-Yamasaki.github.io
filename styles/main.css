@@ -158,21 +158,32 @@ main {
     justify-content: flex-start;
 }
 
+.welcomeMain {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 50px;
+    width: calc(100vw - 100px);
+    height: calc(100vh - 150px);
+}
+
 #greetBox {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
     gap: 10px;
-    width: 90%;
+    width: 100%;
+    height: 100px;
 }
 
-#welcome {
+#welcomeGreet {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 20vw;
-    max-height: 300px;
+    max-width: 100%;
+    max-height: 100%;
     color: white;
     font-size: clamp(21px, 5vw, 75px);
     animation: 6s appear forwards;
@@ -191,4 +202,20 @@ main {
 
 #bio {
     animation: 6s appear forwards;
+    font-size: clamp(12px, 2vw, 50px);
+}
+
+.logoCodeSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    width: calc(100vw - 100px);
+    height: calc(100vh - 50px - );
+}
+
+.logoCodeBox {
+    width: 50%;
+    height: 100%;
 }

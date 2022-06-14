@@ -41,7 +41,6 @@ body {
 
 nav {
     width: calc(100vw - 100px);
-    max-width: 1920px;
     height: 40px;
     display: flex;
     align-items: center;
@@ -175,7 +174,8 @@ main {
     max-width: 20vw;
     max-height: 300px;
     color: white;
-    font-size: clamp(3vw, 5vw, 75px);
+    font-size: clamp(21px, 5vw, 75px);
+    animation: 6s appear forwards;
 }
 
 #delayedGreet {
@@ -185,6 +185,10 @@ main {
     max-width: 60vw;
     max-height: 300px;
     color: white;
-    font-size: clamp(3vw, 5vw, 75px);
+    font-size: clamp(21px, 5vw, 75px);
+    animation: 6s appear forwards;
+}
+
+#bio {
     animation: 6s appear forwards;
 }

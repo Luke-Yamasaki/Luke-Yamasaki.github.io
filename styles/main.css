@@ -152,7 +152,7 @@ body {
 
 .welcomeMain {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
     padding: 50px;
@@ -160,15 +160,38 @@ body {
     height: calc(100vh - 150px);
     background-image: url('../images/profile.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: right;
     animation: 6s appear forwards;
+}
+
+@media only screen and (max-width: 1100px) {
+    .welcomeMain {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 50px;
+        width: calc(100vw - 100px);
+        height: calc(100vh - 150px);
+        background-image: none;
+        animation: 6s appear forwards;
+    }
 }
 
 .welcomeMain:after {
     background-color: rgba(0, 0, 0, 0.25);
     position: absolute;
     z-index: 10;
+}
+
+.welcomeInfo {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    width: 100%;
+    max-height: 50vh;
+    height: 250px;
 }
 
 #greetBox {
@@ -213,34 +236,47 @@ body {
     font-size: clamp(12px, 1.5vw, 24px);
 }
 
-.logoCodeSection {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 100px;
-    width: calc(100vw - 100px);
-    height: calc(100vh - 250px);
+.welcomePictureSection {
+    display: hidden;
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
 }
 
-.logoCodeBox {
-    width: 33%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+@media only screen and (max-width: 1100px) {
+    .welcomePictureSection {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: calc(50vw - 100px);
+        height: calc(50vw - 100px);
+        position: absolute;
+        bottom: 0;
+    }
+
+    .welcomeProfilePicture {
+        object-fit: contain;
+        object-position: center;
+        width: 100%;
+        height: 100%;
+    }
 }
 
-.mainLogo {
-    width: 450px;
-    height: 450px;
-    object-fit: contain;
-    object-position: center;
-}
+@media only screen and (max-width: 500px) {
+    .welcomePictureSection {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: calc(100vw);
+        height: calc(100vw);
+        position: absolute;
+        bottom: 0;
+    }
 
-.logoCode {
-    width: 450px;
-    height: 450px;
-    object-fit: contain;
-    object-position: center;
+    .welcomeProfilePicture {
+        object-fit: contain;
+        object-position: center;
+        width: 100%;
+        height: 100%;
+    }
 }

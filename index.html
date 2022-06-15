@@ -13,7 +13,7 @@
     </style>
 </head>
 <body>
-    <section id="landing">
+    <div id="landing">
         <div id="anim"></div>
         <nav class="welcomeNav">
             <ul class="welcomeList">
@@ -46,16 +46,21 @@
                 </li>
             </ul>
         </nav>
-    <section>
+    <div>
     <main class="welcomeMain">
-        <div id="greetBox">
-            <h1 id="welcomeGreet">Hello!</h1>
-            <h1 id="delayedGreet">My name is Luke Yamasaki</h1>
-        </div>
-        <div class="greetBox">
-            <h2 class="welcomeBio">I'm a Graphic/UX/UI designer and Software Engineer from Tokyo.</h2>
-            <h3 class="welcomeDescription">I can assist with design systems, prototyping and full-stack development.</h3>
-        </div>
+        <section class="welcomeInfo">
+            <div id="greetBox">
+                <h1 id="welcomeGreet">Hello!</h1>
+                <h1 id="delayedGreet">My name is Luke Yamasaki</h1>
+            </div>
+            <div class="greetBox">
+                <h2 class="welcomeBio">I'm a Graphic/UX/UI designer and Software Engineer from Tokyo.</h2>
+                <h3 class="welcomeDescription">I can assist with design systems, prototyping and full-stack development.</h3>
+            </div>
+        </section>
+        <section class="welcomePictureSection">
+            <img class="welcomeProfilePicture" src="./images/profile_square.png" alt="Luke Yamasaki profile pic" />
+        </section>
     </main>
     <script src="./scripts/lottie.js"></script>
     <script src="./scripts/index.js"></script>

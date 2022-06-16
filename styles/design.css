@@ -172,6 +172,7 @@ body {
     margin-top: 250px;
     z-index: 51;
     color: white;
+    background-color: rgba(0, 0, 0, 0.75);
 }
 
 .designTwo:hover:after {
@@ -181,6 +182,7 @@ body {
     margin-top: 250px;
     z-index: 51;
     color: white;
+    background-color: rgba(0, 0, 0, 0.75);
 }
 
 .designThree:hover:after {
@@ -190,6 +192,7 @@ body {
     margin-top: 250px;
     z-index: 51;
     color: white;
+    background-color: rgba(0, 0, 0, 0.75);
 }
 
 .designFour:hover:after {
@@ -199,6 +202,7 @@ body {
     margin-top: 250px;
     z-index: 51;
     color: white;
+    background-color: rgba(0, 0, 0, 0.75);
 }
 
 .projectImages {
@@ -206,4 +210,24 @@ body {
     height: 80%;
     object-fit: contain;
     object-position: center;
+}
+
+.devOne:hover {
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 50;
+}
+
+.devTwo:hover {
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 50;
+}
+
+.devThree:hover {
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 50;
+}
+
+.devFour:hover {
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 50;
 }

@@ -1,0 +1,47 @@
+.aboutSection {
+    width: calc(100vw - 100px);
+    height: calc(100vh - 150px);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.aboutBox {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+    width: clamp(400px, 50vw, 1040px);
+}
+
+.aboutHeader {
+    margin: 0px;
+    padding: 0px;
+    font-size: 36px;
+}
+
+.aboutTitle {
+    margin: 0px;
+    padding: 0px;
+    font-size: 32px;
+}
+
+.aboutContent {
+    margin: 0px;
+    padding: 0px;
+    font-size: 24px;
+}
+
+.aboutList {
+    margin: 0px;
+    padding: 0px;
+}
+
+.aboutItem {
+    margin: 0px;
+    padding: 0px;
+    font-size: 24px;
+}

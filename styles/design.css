@@ -143,31 +143,58 @@ body {
     border-radius: 5px;
 }
 
+.designOne {
+    background-image: url("./images/Ark.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.designTwo {
+background-image: url("./images/Ark.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.designThree {
+background-image: url("./images/Ark.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.designFour {
+background-image: url("./images/Ark.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .designOne:hover {
-    content: "Ark";
     background-color: rgba(0, 0, 0, 0.75);
+    background-image: url("./images/ArkHover.png");
     z-index: 50;
 }
 
 .designTwo:hover {
     content: "Peer Review";
     background-color: rgba(0, 0, 0, 0.75);
+    background-color: lightcoral;
     z-index: 50;
 }
 
 .designThree:hover {
     content: "Klicko";
     background-color: rgba(0, 0, 0, 0.75);
+    background-color: yellow;
     z-index: 50;
 }
 
 .designFour:hover {
     content: "Mock Olympics";
     background-color: rgba(0, 0, 0, 0.75);
+    background-color: orange;
     z-index: 50;
 }
 
-.designOne:hover:after {
+/* .designOne:hover:after {
     content: "Ark";
     font-size: 24px;
     position: absolute;
@@ -205,7 +232,7 @@ body {
     z-index: 51;
     color: white;
     background-color: rgba(0, 0, 0, 0.75);
-}
+} */
 
 .projectImages {
     width: 80%;

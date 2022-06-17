@@ -176,6 +176,21 @@ body {
     }
 }
 
+@media only screen and (max-device-width: 500px) {
+    .welcomeMain {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 25px;
+        padding: 10px 50px 10px 50px;
+        width: calc(100vw - 100px);
+        height: calc(100vh - 70px);
+        background-image: none;
+        animation: 6s appear forwards;
+    }
+}
+
 .welcomeMain:after {
     background-color: rgba(0, 0, 0, 0.25);
     position: absolute;

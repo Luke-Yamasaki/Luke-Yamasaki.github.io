@@ -192,7 +192,6 @@ body {
 }
 
 .designOne:hover {
-    background-color: rgba(0, 0, 0, 0.75);
     background-color: #09B5C2;
     background-image: url("../images/ArkHover.png");
     background-position: center;
@@ -200,7 +199,6 @@ body {
 }
 
 .designTwo:hover {
-    background-color: rgba(0, 0, 0, 0.75);
     background-color: rgb(255, 0, 0);
     background-image: url("../images/PeerReviewHover.png");
     background-position: center;
@@ -208,7 +206,6 @@ body {
 }
 
 .designThree:hover {
-    background-color: rgba(0, 0, 0, 0.75);
     background-color: yellow;
     background-image: url("../images/KlickoHover.png");
     background-position: center;
@@ -216,7 +213,6 @@ body {
 }
 
 .designFour:hover {
-    background-color: rgba(0, 0, 0, 0.75);
     background-color: orange;
     background-image: url("../images/SLCHover.png");
     background-position: center;

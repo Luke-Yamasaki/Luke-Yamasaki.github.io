@@ -144,53 +144,82 @@ body {
 }
 
 .designOne {
-    background-image: url("./images/Ark.png");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/Ark.png");
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .designTwo {
-background-image: url("./images/Ark.png");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/PeerReview.png");
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .designThree {
-background-image: url("./images/Ark.png");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/Klicko.png");
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .designFour {
-background-image: url("./images/Ark.png");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/SaltLake.png");
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .designOne:hover {
     background-color: rgba(0, 0, 0, 0.75);
-    background-image: url("./images/ArkHover.png");
+    background-color: #09B5C2;
+    background-image: url("../images/ArkHover.png");
+    background-position: center;
     z-index: 50;
 }
 
 .designTwo:hover {
-    content: "Peer Review";
     background-color: rgba(0, 0, 0, 0.75);
-    background-color: lightcoral;
+    background-color: rgb(255, 0, 0);
+    background-image: url("../images/PeerReviewHover.png");
+    background-position: center;
     z-index: 50;
 }
 
 .designThree:hover {
-    content: "Klicko";
     background-color: rgba(0, 0, 0, 0.75);
     background-color: yellow;
+    background-image: url("../images/KlickoHover.png");
+    background-position: center;
     z-index: 50;
 }
 
 .designFour:hover {
-    content: "Mock Olympics";
     background-color: rgba(0, 0, 0, 0.75);
     background-color: orange;
+    background-image: url("../images/SLCHover.png");
+    background-position: center;
     z-index: 50;
 }
 

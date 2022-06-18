@@ -270,15 +270,14 @@ body {
     }
 }
 
-@media only screen and (max-device-width: 685px) {
+@media only screen and (max-width: 685px) {
     .welcomeMain {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: flex-start;
-        gap: 25px;
-        padding: 10px 50px 0px 50px;
-        width: calc(100vw - 100px);
+        justify-content: space-between;
+        padding: 10px 25px 0px 25px;
+        width: calc(100vw - 50px);
         height: calc(100vh - 60px);
         background-image: none;
         animation: 6s appear forwards;
@@ -375,7 +374,7 @@ body {
         align-items: center;
         justify-content: center;
         width: 100vw;
-        height: 65vh;
+        height: 50vh;
         position: absolute;
         bottom: 0;
     }

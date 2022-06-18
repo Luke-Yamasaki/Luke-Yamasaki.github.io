@@ -1,6 +1,6 @@
 .aboutSection {
     width: calc(100vw - 100px);
-    height: calc(100vh - 150px);
+    height: calc(100vh - 50px);
     padding: 50px;
     display: flex;
     flex-direction: column;

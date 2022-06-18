@@ -33,6 +33,14 @@ body {
     padding: 0;
 }
 
+/* #anim {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    animation: 5s disappear forwards;
+} */
+
 #noAnim {
     width: 0px;
     height: 0px;
@@ -335,14 +343,6 @@ body {
     }
 }
 
-#anim {
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    animation: 5s disappear forwards;
-}
-
 .welcomeMain {
     display: flex;
     flex-direction: row;
@@ -438,12 +438,18 @@ body {
 
 .welcomeBio {
     animation: 6s appear forwards;
-    font-size: clamp(16px, 2vw, 36px);
+    font-size: clamp(16px, 2vw, 32px);
+    font-family: neuzeit-grotesk, sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .welcomeDescription {
     animation: 6s appear forwards;
     font-size: clamp(12px, 1.5vw, 24px);
+    font-family: neuzeit-grotesk, sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .welcomePictureSection {

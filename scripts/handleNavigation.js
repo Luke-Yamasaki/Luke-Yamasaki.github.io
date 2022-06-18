@@ -1,5 +1,4 @@
-const handleNavigation = (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    return sessionStorage.setItem('visited', 'true');
+const handleNavigation = () => {
+    localStorage.setItem('visited', 'true');
+    console.log(localStorage.getItem('visited'));
 }

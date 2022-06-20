@@ -261,7 +261,7 @@
     }
 
     .hamburgerLine {
-        width: 100%;
+        width: 25px;
         height: 2.5px;
         background-color: white;
         border-radius: 5px;

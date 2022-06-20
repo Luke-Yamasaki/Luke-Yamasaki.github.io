@@ -6,8 +6,8 @@ const checkVisited = () => {
     if (sessionStorage.getItem('visited') === 'true') {
         animationBox.removeAttribute('id');
         animationBox.setAttribute('id', 'noAnim');
-        nav.style.removeProperty('animation');
-        main.style.removeProperty('animation');
+        nav.style.animation = 'none';
+        main.style.animation='none';
     } 
 
     return 'ready';

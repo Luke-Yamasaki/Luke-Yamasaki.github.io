@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/design.css">
     <link rel="stylesheet" href="./styles/regularNavigation.css">
+    <link rel="stylesheet" href="./styles/mainNavigation.css">
     <link rel="stylesheet" href="https://use.typekit.net/low6llp.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <title>Luke Yamasaki | Design</title>
@@ -26,14 +27,37 @@
                         </div>
                     </a>
                 </li>
+                <li class="welcomeItem navMenu">
+                    <aside class="hamburgerContainer">
+                        <div class="hamburgerBox" onclick="handleMenu()">
+                            <div class="hamburgerLine"></div>
+                            <div class="hamburgerLine"></div>
+                            <div class="hamburgerLine"></div>
+                        </div>
+                        <menu class="dropDownMenu">
+                            <a onclick='handleNavigation()' class="dropDownLink" href="design.html">
+                                Design
+                            </a>
+                            <a onclick='handleNavigation()' class="dropDownLink" href="development.html">
+                                Development
+                            </a>
+                            <a onclick='handleNavigation()' class="dropDownLink" href="about.html">
+                                About
+                            </a>
+                            <a onclick='handleNavigation()' class="dropDownLink" href="contact.html">
+                                Contact
+                            </a>
+                        </menu>
+                    </aside>
+                </li>
                 <li class="regItem">
                     <div class="navItemsBox">
                         <a id="navItem" href="design.html">
                             Design
                         </a>
                         <!-- <a id="navItem" href="prototyping.html">
-                            Prototyping
-                        </a> -->
+                                            Prototyping
+                                        </a> -->
                         <a id="navItem" href="development.html">
                             Development
                         </a>

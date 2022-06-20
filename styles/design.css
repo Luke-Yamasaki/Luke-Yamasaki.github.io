@@ -19,49 +19,60 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
     overflow-y: scroll;
 }
 
-.projects {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100vw;
-    min-height: calc(100vh - 100px);
-    color: white;
-}
-
 .projectTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: clamp(28px, 3vw, 48px);
-}
-
-.projectBox {
-    width: clamp(calc(100vw - 100px), 100%, 600px);
-    height: clamp(calc(100vw - 100px), 100%, 600px);
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 10px;
+    height: 75px;
+    margin: 0px;
+    padding: 0px;
 }
 
 @media only screen and (max-width: 685px) {
-    projects {
+    .projects {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: flex-start;
-        width: calc(100vw - 50px);
-        min-height: calc(100vh - 100px);
+        justify-content: center;
+        width: 100vw;
+        height: calc(100vh - 50px);
         color: white;
-        padding: 25px;
     }
 
     .projectBox {
-        width: 100%;
-        height: 100%;
+        width: calc(100vw - 50px);
+        height: calc(100vw - 50px);
+        padding: 25px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
+@media only screen and (min-width: 685px) {
+    .projects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        max-width: 1100px;
+        height: calc(100vh - 50px);
+        color: white;
+    }
+
+    .projectBox {
+        width: calc(100vw - 50px);
+        max-width: 1050px;
+        height: calc(100vh - 125px);
+        padding: 25px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
@@ -71,7 +82,9 @@ body {
 
 .designProject {
     width: 100%;
+    max-width: 600px;
     height: 100%;
+    max-height:600px;
     display: flex;
     align-items: center;
     justify-content: center;

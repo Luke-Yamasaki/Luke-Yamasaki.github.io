@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/design.css">
     <link rel="stylesheet" href="./styles/regularNavigation.css">
+    <link rel="stylesheet" href="./styles/mainNavigation.css">
     <link rel="stylesheet" href="https://use.typekit.net/low6llp.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <title>Luke Yamasaki | Development</title>
@@ -14,26 +15,47 @@
     <main id="design">
         <nav class="regNav">
             <ul class="regList">
-                <li class="regItem">
+                <li class="regItem navLogo">
                     <a class="homeLink" href="index.html">
                         <div class="logoBox">
-                            <img id='logo'
-                            src="./images/LKY_Logo.png"
-                            alt="Luke Yamasaki's logo."/>
+                            <img id='logo' src="./images/LKY_Logo.png" alt="Luke Yamasaki's logo." />
                             <div id="logoType">
                                 LUKE YAMASAKI
                             </div>
                         </div>
                     </a>
                 </li>
-                <li class="regItem">
+                <li class="regItem navMenu">
+                    <aside class="hamburgerContainer">
+                        <div class="hamburgerBox" onclick="handleMenu()">
+                            <div class="hamburgerLine"></div>
+                            <div class="hamburgerLine"></div>
+                            <div class="hamburgerLine"></div>
+                        </div>
+                        <menu class="dropDownMenu">
+                            <a onclick='handleNavigation()' class="dropDownLink" href="design.html">
+                                Design
+                            </a>
+                            <a onclick='handleNavigation()' class="dropDownLink" href="development.html">
+                                Development
+                            </a>
+                            <a onclick='handleNavigation()' class="dropDownLink" href="about.html">
+                                About
+                            </a>
+                            <a onclick='handleNavigation()' class="dropDownLink" href="contact.html">
+                                Contact
+                            </a>
+                        </menu>
+                    </aside>
+                </li>
+                <li class="regItem navLinks">
                     <div class="navItemsBox">
                         <a id="navItem" href="design.html">
                             Design
                         </a>
                         <!-- <a id="navItem" href="prototyping.html">
-                            Prototyping
-                        </a> -->
+                                                    Prototyping
+                                                </a> -->
                         <a id="navItem" href="development.html">
                             Development
                         </a>
@@ -67,5 +89,11 @@
             </div>
         </section>
     <main>
+    <script src="./scripts/handleMenu.js"></script>
+    <script>
+        const handleNavigation = () => {
+            sessionStorage.visited = "true";
+        };
+    </script>
 </body>
 </html>

@@ -15,7 +15,7 @@
     <main id="design">
         <nav class="regNav">
             <ul class="regList">
-                <li class="regItem">
+                <li class="regItem navLogo">
                     <a class="homeLink" href="index.html">
                         <div class="logoBox">
                             <img id='logo'
@@ -27,7 +27,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="welcomeItem navMenu">
+                <li class="regItem navMenu">
                     <aside class="hamburgerContainer">
                         <div class="hamburgerBox" onclick="handleMenu()">
                             <div class="hamburgerLine"></div>
@@ -50,7 +50,7 @@
                         </menu>
                     </aside>
                 </li>
-                <li class="regItem">
+                <li class="regItem navLinks">
                     <div class="navItemsBox">
                         <a id="navItem" href="design.html">
                             Design
@@ -91,5 +91,11 @@
             </div>
         </section>
     <main>
+    <script src="./scripts/handleMenu.js"></script>
+    <script>
+        const handleNavigation = () => {
+            sessionStorage.visited = "true";
+        };
+    </script>
 </body>
 </html>

@@ -22,7 +22,7 @@ body {
     overflow-y: hidden;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
 }
 
@@ -85,7 +85,26 @@ body {
     z-index: 5;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (min-width: 1750px) {
+    .welcomeMain {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 50px 50px 0px 50px;
+        width: calc(100vw - 100px);
+        max-width: 1920px;
+        height: calc(100vh - 100px);
+        background-image: url('../images/profile.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+        animation: 6s appear forwards;
+        z-index: 5;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
     .welcomeMain {
         display: flex;
         flex-direction: column;
@@ -136,7 +155,7 @@ body {
     justify-content: flex-start;
     gap: 10px;
     width: 100%;
-    height: 100px;
+    height: clamp(25px, 10vw, 100px);
 }
 
 #welcomeGreet {
@@ -146,7 +165,7 @@ body {
     max-width: 100%;
     max-height: 100%;
     color: white;
-    font-size: clamp(21px, 5vw, 75px);
+    font-size: clamp(14px, 5vw, 75px);
 }
 
 #delayedGreet {
@@ -156,18 +175,18 @@ body {
     max-width: 60vw;
     max-height: 300px;
     color: white;
-    font-size: clamp(21px, 5vw, 75px);
+    font-size: clamp(14px, 5vw, 75px);
 }
 
 .welcomeBio {
-    font-size: clamp(16px, 2vw, 32px);
+    font-size: clamp(10px, 2.25vw, 32px);
     font-family: neuzeit-grotesk, sans-serif;
     font-weight: 500;
     font-style: normal;
 }
 
 .welcomeDescription {
-    font-size: clamp(12px, 1.5vw, 24px);
+    font-size: clamp(10px, 1.85vw, 24px);
     font-family: neuzeit-grotesk, sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -180,7 +199,25 @@ body {
     overflow: hidden;
 }
 
-@media only screen and (min-width: 900px) and (max-width: 1100px) {
+@media only screen and (max-width: 460px) {
+    .welcomeBio {
+        font-size: clamp(10px, 2.25vw, 32px);
+        font-family: neuzeit-grotesk, sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        max-width: 300px;
+    }
+
+    .welcomeDescription {
+        font-size: clamp(10px, 1.85vw, 24px);
+        font-family: neuzeit-grotesk, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        max-width: 300px;
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1250px) {
     .welcomePictureSection {
         display: flex;
         align-items: center;

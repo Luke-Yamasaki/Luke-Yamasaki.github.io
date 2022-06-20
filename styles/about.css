@@ -41,6 +41,7 @@
     }
 
     .aboutBox {
+        margin-top: 150px;
         display: flex;
         flex-direction: column;
         align-items: left;

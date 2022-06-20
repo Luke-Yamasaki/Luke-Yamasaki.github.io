@@ -38,17 +38,28 @@ body {
 }
 
 .projectBox {
-    width: clamp(calc(100vw - 100px), 60vw, 800px);
-    height: clamp(calc(100vw - 100px), 50vw, 600px);
+    width: clamp(calc(100vw - 100px), 100%, 600px);
+    height: clamp(calc(100vw - 100px), 100%, 600px);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 10px;
 }
 
+@media only screen and (max-width: 685px) {
+    .projectBox {
+        width: clamp(calc(100vw - 50px), 90vw, 600px);
+        height: clamp(calc(100vw - 50px), 90vw, 600px);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
 .designProject {
-    width: clamp(190px, calc(30vw - 10px), 400px);
-    height: clamp(190px, calc(30vw - 10px), 300px);
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -132,46 +143,6 @@ body {
     z-index: 50;
 }
 
-/* .designOne:hover:after {
-    content: "Ark";
-    font-size: 24px;
-    position: absolute;
-    margin-top: 250px;
-    z-index: 51;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.75);
-}
-
-.designTwo:hover:after {
-    content: "Peer Review";
-    font-size: 24px;
-    position: absolute;
-    margin-top: 250px;
-    z-index: 51;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.75);
-}
-
-.designThree:hover:after {
-    content: "Klicko";
-    font-size: 24px;
-    position: absolute;
-    margin-top: 250px;
-    z-index: 51;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.75);
-}
-
-.designFour:hover:after {
-    content: "Mock Olympics";
-    font-size: 24px;
-    position: absolute;
-    margin-top: 250px;
-    z-index: 51;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.75);
-} */
-
 .projectImages {
     width: 80%;
     height: 80%;
@@ -218,3 +189,43 @@ body {
     align-items: left;
     justify-content: center;
 }
+
+/* .designOne:hover:after {
+    content: "Ark";
+    font-size: 24px;
+    position: absolute;
+    margin-top: 250px;
+    z-index: 51;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.designTwo:hover:after {
+    content: "Peer Review";
+    font-size: 24px;
+    position: absolute;
+    margin-top: 250px;
+    z-index: 51;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.designThree:hover:after {
+    content: "Klicko";
+    font-size: 24px;
+    position: absolute;
+    margin-top: 250px;
+    z-index: 51;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.designFour:hover:after {
+    content: "Mock Olympics";
+    font-size: 24px;
+    position: absolute;
+    margin-top: 250px;
+    z-index: 51;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.75);
+} */

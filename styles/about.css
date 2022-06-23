@@ -1,5 +1,6 @@
 .aboutSection {
     width: calc(100vw - 100px);
+    max-width: 1920px;
     height: calc(100vh - 150px);
     padding: 50px;
     display: flex;

@@ -1,20 +1,4 @@
-html {
-    width: 100vw;
-    height: 100vh;
-    overflow-x: hidden;
-    font-family: ff-dax-compact-pro, sans-serif;
-    color: white;
-}
-
-body {
-    margin: 0px;
-    padding: 0px;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(25, 25, 25);
-}
-
-#design {
+.design {
     width: 100vw;
     height: 100vh;
     display: flex;

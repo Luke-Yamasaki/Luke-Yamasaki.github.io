@@ -30,17 +30,6 @@
     }
 }
 
-.home {
-    margin: 0px;
-    padding: 0px;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(25, 25, 25);
-    overflow: hidden;
-    font-family: ff-dax-compact-pro, sans-serif;
-    color: white;
-}
-
 .landing {
     width: 100vw;
     height: 100vh;
@@ -52,7 +41,7 @@
     justify-content: flex-start;
 }
 
-#anim {
+.anim {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -63,7 +52,7 @@
     animation: 5s disappear forwards;
 }
 
-#noAnim {
+.noAnim {
     width: 0px;
     height: 0px;
     display: none;
@@ -298,7 +287,7 @@
         padding: 0px;
     }
 
-    .welcomePictureSection {
+        .welcomePictureSection {
         display: flex;
         align-items: center;
         justify-content: flex-end;

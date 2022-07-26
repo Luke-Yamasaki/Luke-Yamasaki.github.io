@@ -8,7 +8,7 @@ export default function Design() {
             <Head>
                 <title>Luke Yamasaki | Design</title>
             </Head>
-            <main className={styles.design}>
+            <div className={styles.design}>
                 <NavBar />
                 <section className={styles.projects}>
                     <h1 className={styles.projectTitle}>
@@ -29,7 +29,7 @@ export default function Design() {
                         </a>
                     </div>
                 </section>
-            </main>
+            </div>
         </>
     )
 }

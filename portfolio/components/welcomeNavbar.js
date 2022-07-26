@@ -1,5 +1,4 @@
-import styles from '../styles/welcomeNavigation.module.css';
-import mainStyles from '../styles/mainNavigation.module.css';
+import styles from '../styles/navigation.module.css';
 import Link from "next/link";
 import Image from "next/image";
 import logo from '../public/images/LKY_Logo.png';
@@ -11,27 +10,27 @@ export const NavBar = () => {
 
     return (
         <nav className={styles.welcomeNav}>
-            <ul className={styles.welcomeList}>
-                <li className={`${styles.welcomeItem} ${mainStyles.navLogo}`}>
+            <ul className={styles.navList}>
+                <li className={`${styles.navItem} ${styles.navLogo}`}>
                     <Link href='/'>
-                        <a className={mainStyles.homeLink}>
-                            <div className={mainStyles.logoBox}>
+                        <a className={styles.homeLink}>
+                            <div className={styles.logoBox}>
                                 <Image
                                     priority
-                                    className={mainStyles.logo}
+                                    className={styles.logo}
                                     src={logo}
                                     height={30}
                                     width={30}
                                     alt={altName}
                                 />
-                                <div className={mainStyles.logoType}>
+                                <div className={styles.logoType}>
                                     LUKE YAMASAKI
                                 </div>
                             </div>
                         </a>
                     </Link>
                 </li>
-                <li className={`${styles.welcomeItem} ${mainStyles.navLinks}`}>
+                <li className={`${styles.navItem} ${styles.navLinks}`}>
                     <NavLinks />
                 </li>
             </ul>

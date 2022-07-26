@@ -20,7 +20,8 @@ export default function Home() {
                   <h1 className={styles.welcomeGreet}>Hello!</h1>
                   <h1 className={styles.delayedGreet}>My name is Luke Yamasaki</h1>
               </div>
-              <div className={styles.greetBox}>
+              <h1 className={styles.smallGreet}>My name is Luke Yamasaki</h1>
+              <div>
                   <h2 className={styles.welcomeBio}>I'm a Graphic/UI Designer and Software Engineer from Tokyo.</h2>
                   <h3 className={styles.welcomeDescription}>I can assist with design systems, prototyping and full-stack development.</h3>
               </div>

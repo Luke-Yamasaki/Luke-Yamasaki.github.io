@@ -1,0 +1,379 @@
+@keyframes disappear {
+    0% {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    80% {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    100% {
+        width: 0px;
+        height: 0px;
+        display: none;
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0%;
+    }
+
+    85% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+.home {
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(25, 25, 25);
+    overflow: hidden;
+    font-family: ff-dax-compact-pro, sans-serif;
+    color: white;
+}
+
+.landing {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#anim {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    animation: 5s disappear forwards;
+}
+
+#noAnim {
+    width: 0px;
+    height: 0px;
+    display: none;
+    animation: none;
+}
+
+.welcomeMain {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 50px 50px 0px 50px;
+    width: calc(100vw - 100px);
+    height: calc(100vh - 100px);
+    background-image: url('../public/images/profile.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    animation: 6s appear forwards;
+    z-index: 5;
+}
+
+@media only screen and (min-width: 1750px) {
+    .welcomeMain {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 50px 50px 0px 50px;
+        width: calc(100vw - 100px);
+        max-width: 1920px;
+        height: calc(100vh - 100px);
+        background-image: url('../public/images/profile.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+        animation: 6s appear forwards;
+        z-index: 5;
+    }
+}
+
+@media only screen and (min-width: 685px) and (max-width: 1250px) {
+    .welcomeMain {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 25px 50px 0px 50px;
+        width: calc(100vw - 100px);
+        height: calc(100vh - 75px);
+        background-image: none;
+        animation: 6s appear forwards;
+        z-index: 5;
+    }
+}
+
+@media only screen and (max-width: 685px) {
+    .welcomeMain {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 25px 25px 0px 25px;
+        width: calc(100vw - 50px);
+        height: calc(100vh - 75px);
+        background-image: none;
+        animation: 6s appear forwards;
+        z-index: 5;
+    }
+}
+
+.welcomeMain:after {
+    background-color: rgba(0, 0, 0, 0.25);
+    position: absolute;
+    z-index: 10;
+}
+
+.welcomeInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-start;
+    max-width: 1200px;
+    width: 100%;
+    height: 30%;
+}
+
+.greetBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 100%;
+    height: clamp(25px, 10vw, 100px);
+}
+
+.welcomeGreet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: clamp(24px, 6vw, 75px);
+}
+
+.delayedGreet {
+    width: 0px;
+    height: 0px;
+    display: hidden;
+    overflow: hidden;
+}
+
+.smallGreet {
+    width: 0px;
+    height: 0px;
+    display: hidden;
+    overflow: hidden;
+    position: absolute;
+}
+
+.welcomeBio {
+    font-size: clamp(10px, 2.25vw, 32px);
+    font-family: neuzeit-grotesk, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.welcomeDescription {
+    font-size: clamp(10px, 1.85vw, 24px);
+    font-family: neuzeit-grotesk, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.welcomePictureSection {
+    display: hidden;
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 460px) {
+    .welcomeMain {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 25px 25px 0px 25px;
+        width: calc(100vw - 50px);
+        height: calc(100vh - 75px);
+        background-image: none;
+        animation: 6s appear forwards;
+        z-index: 5;
+    }
+
+    .smallGreet {
+        overflow: visible;
+        width: auto;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        color: white;
+        font-size: clamp(18px, 6vw, 21px);
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+    }
+
+    .welcomeBio {
+        font-size: clamp(18px, 3vw, 32px);
+        font-family: neuzeit-grotesk, sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        max-width: 375px;
+        line-height: 24px;
+    }
+
+    .welcomeDescription {
+        font-size: clamp(16px, 2.5vw, 24px);
+        font-family: neuzeit-grotesk, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        max-width: 325px;
+        line-height: 21px;
+    }
+}
+
+@media only screen and (min-width: 460px) and (max-width: 685px) {
+    .smallGreet {
+        overflow: visible;
+        width: auto;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        color: white;
+        font-size: clamp(18px, 6vw, 24px);
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+    }
+
+    .welcomeBio {
+        font-size: clamp(18px, 3vw, 32px);
+        font-family: neuzeit-grotesk, sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        max-width: 400px;
+    }
+
+    .welcomeDescription {
+        font-size: clamp(16px, 2.5vw, 24px);
+        font-family: neuzeit-grotesk, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        max-width: 400px;
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1250px) {
+    .delayedGreet {
+        overflow: visible;
+        width: auto;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: clamp(18px, 6vw, 75px);
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .welcomePictureSection {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+        height: 70%;
+        overflow: visible;
+    }
+
+    .welcomeProfilePicture {
+        object-fit: contain;
+        object-position: bottom right;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 1250px) {
+    .delayedGreet {
+        overflow: visible;
+        width: auto;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: clamp(18px, 6vw, 75px);
+        margin: 0px;
+        padding: 0px;
+    }
+}
+
+@media only screen and (min-width: 685px) and (max-width: 900px) {
+    .delayedGreet {
+        overflow: visible;
+        width: auto;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: clamp(18px, 6vw, 75px);
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .welcomePictureSection {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+        height: 70%;
+        overflow: visible;
+    }
+
+    .welcomeProfilePicture {
+        object-fit: contain;
+        object-position: bottom;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 685px) {
+    .welcomePictureSection {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 70%;
+    }
+
+    .welcomeProfilePicture {
+        object-fit: contain;
+        object-position: bottom;
+        width: 100%;
+        height: 100%;
+    }
+}

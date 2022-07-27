@@ -11,8 +11,7 @@ export const HamburgerMenu = () => {
         return
     }
 
-    const handleNavigation = (e) => {
-        e.preventDefault();
+    const handleNavigation = () => {
         sessionStorage.visited = "true";
     }
 

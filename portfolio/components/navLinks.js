@@ -3,8 +3,7 @@ import Link from "next/link";
 
 export const NavLinks = () => {
 
-    const handleNavigation = (e) => {
-        e.preventDefault();
+    const handleNavigation = () => {
         sessionStorage.visited = "true";
     }
 

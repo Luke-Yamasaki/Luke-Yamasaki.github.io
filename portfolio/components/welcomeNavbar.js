@@ -2,7 +2,7 @@ import styles from '../styles/navigation.module.css';
 import Link from "next/link";
 import Image from "next/image";
 import logo from '../public/images/LKY_Logo.png';
-import { NavLinks } from './navLinks.js';
+import { NavLinks } from './navLinks';
 import { HamburgerMenu } from './hamburgerMenu';
 
 const altName = "Luke Yamasaki's logo";

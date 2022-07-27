@@ -1,10 +1,18 @@
-import styles from '../styles/navigation.module.css';
+//Next.js
 import Link from "next/link";
 
+//Context
+import { useVisited } from "../context/index";
+
+//CSS
+import styles from '../styles/navigation.module.css';
+
+
 export const NavLinks = () => {
+    const { setVisited } = useVisited();
 
     const handleNavigation = () => {
-        sessionStorage.visited = "true";
+        setVisited(true);
     }
 
     return (

@@ -15,7 +15,7 @@ import Lottie from 'react-lottie-player';
 import openingLottie from '../animation/data.json';
 
 
-export default function Layout({ children }) {
+export default function Layout({ children, home, projects }) {
     const { visited } = useVisited();
 
     return (
@@ -30,23 +30,29 @@ export default function Layout({ children }) {
                 <meta name="og:title" content="Luke Yamasaki's Portfolio Website" />
                 <meta name="twitter:card" content="summary_large_image" />
             </Head>
-            {visited ? (
+            {home ? (
+                 <>
+                    {visited &&
+                        <div className={styles.anim}>
+                            <Lottie
+                            animationData={openingLottie}
+                            play
+                            rendererSettings={{ preserveAspectRatio: 'xMidYMid slice' }}
+                            />
+                        </div>
+                    }
+                    <NavBar visited={visited}/>
+                    <main className={styles.welcomeMain}>{children}</main>
+                </>
+            ) : projects ? (
+                <>
+                    <NavBar visited={visited} />
+                    <main className={styles.projectsContainer}>{children}</main>
+                </>
+            ) : (
                 <>
                     <NavBar visited={visited} />
                     <main>{children}</main>
-                </>
-
-            ) : (
-                <>
-                    <div className={styles.anim}>
-                        <Lottie
-                        animationData={openingLottie}
-                        play
-                        rendererSettings={{ preserveAspectRatio: 'xMidYMid slice' }}
-                        />
-                    </div>
-                    <NavBar visited={visited}/>
-                    <main className={styles.welcomeMain}>{children}</main>
                 </>
             )}
         </body>

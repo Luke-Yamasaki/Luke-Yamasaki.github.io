@@ -2,17 +2,36 @@ import Head from 'next/head'
 import { NavBar } from '../components/welcomeNavbar';
 import styles from '../styles/main.module.css'
 import Image from "next/image";
-
+import Lottie from 'react-lottie-player';
+import openingLottie from '../animation/data.json';
+import { useState, useEffect } from 'react';
 
 export default function Home() {
-  return (
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [hasVisited, setHasVisited] = useState('');
+
+  useEffect(() => {
+    const bool = sessionStorage.getItem('visited');
+    bool === 'true' ? setHasVisited(true) : setHasVisited(false);
+    setIsLoaded(true);
+  },[])
+
+  return isLoaded && (
     <div className={styles.landing}>
       <Head>
         <title>Luke Yamasaki | Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://use.typekit.net/low6llp.css" />
       </Head>
-
+      {hasVisited === false &&
+        <div className={styles.anim}>
+          <Lottie
+            animationData={openingLottie}
+            play
+            rendererSettings={{ preserveAspectRatio: 'xMidYMid slice' }}
+          />
+        </div>
+      }
       <NavBar />
       <main className={styles.welcomeMain}>
           <section className={styles.welcomeInfo}>

@@ -7,7 +7,7 @@ export default function VisitedProvider(props) {
     const [visited, setVisited] = useState('');
 
     useEffect(() => {
-        sessionStorage.getItem('visited') === 'true' ? setVisited(true) : setVisited(false);
+        sessionStorage.getItem('visited') ? setVisited(true) : setVisited(false);
     },[])
 
     return (

@@ -1,38 +1,21 @@
+//Next.js
 import Head from 'next/head'
-import { NavBar } from '../components/welcomeNavbar';
-import styles from '../styles/main.module.css'
 import Image from "next/image";
-import Lottie from 'react-lottie-player';
-import openingLottie from '../animation/data.json';
-import { useState, useEffect } from 'react';
+
+//Components
+import Layout from '../components/layout';
+
+//CSS
+import styles from '../styles/home.module.css'
+
 
 export default function Home() {
-  const [isLoaded, setIsLoaded] = useState(false);
-  const [hasVisited, setHasVisited] = useState('');
 
-  useEffect(() => {
-    const bool = sessionStorage.getItem('visited');
-    bool === 'true' ? setHasVisited(true) : setHasVisited(false);
-    setIsLoaded(true);
-  },[])
-
-  return isLoaded && (
-    <div className={styles.landing}>
+  return (
+    <Layout>
       <Head>
         <title>Luke Yamasaki | Portfolio</title>
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="stylesheet" href="https://use.typekit.net/low6llp.css" />
       </Head>
-      {hasVisited === false &&
-        <div className={styles.anim}>
-          <Lottie
-            animationData={openingLottie}
-            play
-            rendererSettings={{ preserveAspectRatio: 'xMidYMid slice' }}
-          />
-        </div>
-      }
-      <NavBar />
       <main className={styles.welcomeMain}>
           <section className={styles.welcomeInfo}>
               <div className={styles.greetBox}>
@@ -56,6 +39,6 @@ export default function Home() {
             />
           </section>
       </main>
-    </div>
+    </Layout>
   )
 }

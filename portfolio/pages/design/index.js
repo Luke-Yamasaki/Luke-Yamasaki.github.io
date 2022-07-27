@@ -1,3 +1,4 @@
+//Next.js
 import { NavBar } from '../../components/welcomeNavbar'
 import styles from "../../styles/design.module.css";
 import Head from 'next/head';

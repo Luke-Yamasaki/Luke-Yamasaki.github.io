@@ -1,16 +1,21 @@
-import styles from '../styles/navigation.module.css';
+//Next.js
 import Link from "next/link";
 import Image from "next/image";
-import logo from '../public/images/LKY_Logo.png';
+
+//Components
 import { NavLinks } from './navLinks';
 import { HamburgerMenu } from './hamburgerMenu';
 
-const altName = "Luke Yamasaki's logo";
+//CSS
+import styles from '../styles/navigation.module.css';
 
-export const NavBar = () => {
+//Images
+import logo from '../public/images/LKY_Logo.png';
+
+export const NavBar = ({ visited }) => {
 
     return (
-        <nav className={styles.welcomeNav}>
+        <nav className={visited ? styles.regNav : styles.welcomeNav}>
             <ul className={styles.navList}>
                 <li className={`${styles.navItem} ${styles.navLogo}`}>
                     <Link href='/'>
@@ -22,7 +27,7 @@ export const NavBar = () => {
                                     src={logo}
                                     height={30}
                                     width={30}
-                                    alt={altName}
+                                    alt="Luke Yamasaki's logo"
                                 />
                                 <div className={styles.logoType}>
                                     LUKE YAMASAKI

@@ -1,7 +1,7 @@
-import { NavBar } from '../../components/welcomeNavbar';
+import { NavBar } from '../components/welcomeNavbar';
 import Head from 'next/head';
-import styles from '../../styles/about.module.css';
-import bgStyles from '../../styles/design.module.css';
+import styles from '../styles/about.module.css';
+import bgStyles from '../styles/design.module.css';
 
 export default function About() {
     return (

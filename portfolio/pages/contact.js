@@ -1,6 +1,6 @@
-import { NavBar } from '../../components/welcomeNavbar';
+import { NavBar } from '../components/welcomeNavbar';
 import Head from 'next/head';
-import styles from '../../styles/design.module.css';
+import styles from '../styles/design.module.css';
 
 export default function Contact() {
     return (

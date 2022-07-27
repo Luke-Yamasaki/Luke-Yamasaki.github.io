@@ -1,5 +1,5 @@
-import { NavBar } from '../components/welcomeNavbar'
-import styles from "../styles/design.module.css";
+import { NavBar } from '../../components/welcomeNavbar'
+import styles from "../../styles/design.module.css";
 import Head from 'next/head';
 
 export default function Design() {

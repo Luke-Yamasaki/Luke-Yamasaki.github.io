@@ -1,18 +1,29 @@
-import styles from '../styles/navigation.module.css';
-import { useState } from 'react';
+//Next.js
 import Link from 'next/link';
+
+//React
+import { useState } from 'react';
+
+//Context
+import { useVisited } from "../context/index";
+
+//CSS
+import styles from '../styles/navigation.module.css';
 
 export const HamburgerMenu = () => {
     const [showMenu, setShowMenu] = useState(false);
+    const { visited, setVisited } = useVisited();
 
     const handleMenu = (e) => {
         e.preventDefault();
-        setShowMenu(!showMenu);
-        return
+        return setShowMenu(!showMenu);
     }
 
     const handleNavigation = () => {
-        sessionStorage.visited = "true";
+        if(!visited) {
+            sessionStorage.setItem('visited', 'true');
+            return setVisited(true);
+        }
     }
 
     return (

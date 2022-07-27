@@ -1,6 +1,6 @@
 .aboutSection {
     min-width: 600px;
-    max-width: calc(30vw - 100px);
+    max-width: calc(40vw - 100px);
     height: calc(100vh - 150px);
     padding: 50px;
     display: flex;

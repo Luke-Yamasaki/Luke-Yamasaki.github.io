@@ -1,0 +1,228 @@
+@media only screen and (max-width: 685px) {
+    .projects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100vw;
+        height: calc(100vh - 90px);
+        padding: 15px 0px 25px 0px;
+        color: white;
+        gap: 15px;
+    }
+
+    .projectTitle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: clamp(18px, 5vw, 32px);
+        height: 50px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .projectBox {
+        width: calc(100vw - 50px);
+        height: calc(100vw - 50px);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .designProject {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        border-radius: 5px;
+    }
+}
+
+@media only screen and (min-width: 685px) {
+    .projects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 35px 0px 35px 0px;
+        gap: 35px;
+        width: 100vw;
+        height: calc(100vh - 120px);
+        color: white;
+    }
+
+    .projectTitle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: clamp(21px, 5vw, 48px);
+        height: 50px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .projectBox {
+        width: clamp(250px, calc(100vw - 50px), 1100px);
+        height: clamp(250px, calc(100vw - 50px), calc(100vh - 150px));
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .designProject {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        border-radius: 5px;
+    }
+}
+
+.designOne {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-image: url("../public/images/Ark.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.designTwo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-image: url("../public/images/PeerReview.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.designThree {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-image: url("../public/images/Klicko.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.designFour {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-image: url("../public/images/SaltLake.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.designOne:hover {
+    background-color: #09B5C2;
+    background-image: url("../public/images/ArkHover.png");
+    background-position: center;
+    z-index: 50;
+}
+
+.designTwo:hover {
+    background-color: rgb(255, 0, 0);
+    background-image: url("../public/images/PeerReviewHover.png");
+    background-position: center;
+    z-index: 50;
+}
+
+.designThree:hover {
+    background-color: yellow;
+    background-image: url("../public/images/KlickoHover.png");
+    background-position: center;
+    z-index: 50;
+}
+
+.designFour:hover {
+    background-color: orange;
+    background-image: url("../public/images/SLCHover.png");
+    background-position: center;
+    z-index: 50;
+}
+
+.projectImages {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.devOne:hover {
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 50;
+}
+
+.devTwo:hover {
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 50;
+}
+
+.devThree:hover {
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 50;
+}
+
+.devFour:hover {
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 50;
+}
+
+/* .designOne:hover:after {
+    content: "Ark";
+    font-size: 24px;
+    position: absolute;
+    margin-top: 250px;
+    z-index: 51;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.designTwo:hover:after {
+    content: "Peer Review";
+    font-size: 24px;
+    position: absolute;
+    margin-top: 250px;
+    z-index: 51;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.designThree:hover:after {
+    content: "Klicko";
+    font-size: 24px;
+    position: absolute;
+    margin-top: 250px;
+    z-index: 51;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.designFour:hover:after {
+    content: "Mock Olympics";
+    font-size: 24px;
+    position: absolute;
+    margin-top: 250px;
+    z-index: 51;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.75);
+} */

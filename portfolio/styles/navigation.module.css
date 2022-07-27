@@ -1,0 +1,332 @@
+@keyframes appear {
+    0% {
+        opacity: 0%;
+    }
+
+    85% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+.welcomeNav {
+    width: calc(100vw - 100px);
+    max-width: 1920px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 50px 5px 50px;
+    background-color: #191919;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    animation: 5s appear forwards;
+    position: relative;
+    z-index: 1990;
+}
+
+.regNav {
+    width: calc(100vw - 100px);
+    max-width: 1920px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 50px 5px 50px;
+    background-color: #191919;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    position: sticky;
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    top: 0;
+}
+
+.navList {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.navItem {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    height: 40px;
+    width: 50%
+}
+
+.homeLink {
+    width: 200px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+}
+
+.navLogo {
+    width: 50%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logoBox {
+    width: 100%;
+    height: 100%;
+    font-weight: 900;
+    font-size: 21px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoType {
+    display: flex;
+    align-items: center;
+    width: 200px;
+}
+
+.hamburgerContainer {
+    width: 100%;
+    height: clamp(0px, auto, 100vh);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: none;
+}
+
+.hamburgerBox {
+    width: 0px;
+    height: 0px;
+    display: hidden;
+}
+
+.shownContainer {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 15px 25px 5px 25px;
+    width: calc(30vw - 50px);
+    height: calc(100vh - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    background-color: white;
+    z-index: 2000;
+}
+
+.shownBox {
+    filter: invert(1);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2001;
+    gap: 0px;
+    cursor: pointer;
+}
+
+.shownOne {
+    position: absolute;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    z-index: 2002;
+}
+
+.shownTwo {
+    position: absolute;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    z-index: 2003;
+}
+
+.shownThree {
+    position: absolute;
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    z-index: 2004;
+}
+
+.hamburgerLine {
+    width: 0px;
+    height: 0px;
+    display: hidden;
+}
+
+.dropDownMenu {
+    display: none;
+    width: 0px;
+    height: 0px;
+}
+
+.menuShown {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-start;
+    gap: 15px;
+    width: 25vw;
+    height: 50%;
+    z-index: 2005;
+}
+
+.dropDownLink {
+    display: none;
+    width: 0px;
+    height: 0px;
+}
+
+.linkShown {
+    width: calc(100% - 15px);
+    padding-left: 15px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #191919;
+    font-size: 18px;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 2006;
+}
+
+.linkShown:hover {
+    text-decoration: underline;
+}
+
+.navLinksBox {
+    height: 40px;
+    font-weight: 700;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+}
+
+.navLink {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+@media only screen and (min-width: 685px) {
+    .navLinks {
+        width: 50%;
+        height: 40px;
+    }
+
+    .navMenu {
+        width: 0px;
+        height: 0px;
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 685px) {
+    .welcomeNav {
+        width: calc(100vw - 50px);
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 25px 5px 25px;
+        background-color: #191919;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+        animation: 5s appear forwards;
+    }
+
+    .regNav {
+        width: calc(100vw - 50px);
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 25px 5px 25px;
+        background-color: #191919;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    }
+
+    .hamburgerBox {
+        width: 25px;
+        height: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-around;
+        cursor: pointer;
+    }
+
+    .hamburgerLine {
+        width: 25px;
+        height: 2.5px;
+        background-color: white;
+        border-radius: 5px;
+    }
+
+    .navMenu {
+        width: 50%;
+        height: clamp(40px, auto, 100vh);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navLinks {
+        width: 0px;
+        height: 0px;
+        display: hidden;
+    }
+
+    .navLinksBox {
+        width: 0px;
+        height: 0px;
+        display: hidden;
+        overflow: hidden;
+    }
+}

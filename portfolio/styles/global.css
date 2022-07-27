@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+html, body {
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: ff-dax-compact-pro, sans-serif;
+    background-color: rgba(25, 25, 25);
+    color: white;
+=======
 html,
 body {
   padding: 0;
@@ -24,4 +35,5 @@ a:hover {
 img {
   max-width: 100%;
   display: block;
+>>>>>>> main
 }

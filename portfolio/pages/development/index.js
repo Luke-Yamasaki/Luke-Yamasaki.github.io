@@ -11,7 +11,7 @@ import styles from "../../styles/design.module.css";
 
 export default function Development() {
     return (
-        <Layout projects>
+        <Layout>
             <Head>
                 <title>Luke Yamasaki | Development</title>
             </Head>

@@ -10,7 +10,7 @@ import styles from "../../styles/design.module.css";
 
 export default function Design() {
     return (
-        <Layout projects>
+        <Layout>
             <Head>
                 <title>Luke Yamasaki | Design</title>
             </Head>

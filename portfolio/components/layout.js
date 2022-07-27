@@ -15,7 +15,7 @@ import Lottie from 'react-lottie-player';
 import openingLottie from '../animation/data.json';
 
 
-export default function Layout({ children, home, projects }) {
+export default function Layout({ children, home }) {
     const { visited } = useVisited();
 
     return (
@@ -44,15 +44,10 @@ export default function Layout({ children, home, projects }) {
                     <NavBar visited={visited}/>
                     <main className={styles.welcomeMain}>{children}</main>
                 </>
-            ) : projects ? (
-                <>
-                    <NavBar visited={visited} />
-                    <main className={styles.projectsContainer}>{children}</main>
-                </>
             ) : (
                 <>
                     <NavBar visited={visited} />
-                    <main>{children}</main>
+                    <main className={styles.projectsContainer}>{children}</main>
                 </>
             )}
         </body>

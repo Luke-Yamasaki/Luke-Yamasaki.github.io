@@ -14,12 +14,11 @@ import styles from "../styles/layout.module.css";
 import Lottie from 'react-lottie-player';
 import openingLottie from '../animation/data.json';
 
-
 export default function Layout({ children, home }) {
     const { visited } = useVisited();
 
     return (
-        <body className={styles.landing}>
+        <div className={styles.landing}>
             <Head>
                 <link rel="icon" href="/favicon.ico" />
                 <link rel="stylesheet" href="https://use.typekit.net/low6llp.css" />
@@ -32,17 +31,17 @@ export default function Layout({ children, home }) {
             </Head>
             {home ? (
                  <>
-                    {visited &&
+                    {/* {visited &&
                         <div className={styles.anim}>
                             <Lottie
-                            animationData={openingLottie}
-                            play
-                            rendererSettings={{ preserveAspectRatio: 'xMidYMid slice' }}
+                                animationData={openingLottie}
+                                play
+                                rendererSettings={{ preserveAspectRatio: 'xMidYMid slice' }}
                             />
                         </div>
-                    }
+                    } */}
                     <NavBar visited={visited}/>
-                    <main className={styles.welcomeMain}>{children}</main>
+                    <main className={visited ? styles.homeMain : styles.welcomeMain}>{children}</main>
                 </>
             ) : (
                 <>
@@ -50,6 +49,6 @@ export default function Layout({ children, home }) {
                     <main className={styles.projectsContainer}>{children}</main>
                 </>
             )}
-        </body>
+        </div>
     )
 }

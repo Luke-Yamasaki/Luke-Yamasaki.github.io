@@ -4,6 +4,9 @@ import Link from "next/link";
 //Context
 import { useVisited } from "../context/index";
 
+//Cookie Cutter
+import cookie from "cookie-cutter";
+
 //CSS
 import styles from '../styles/navigation.module.css';
 
@@ -12,6 +15,7 @@ export const NavLinks = () => {
     const { setVisited } = useVisited();
 
     const handleNavigation = () => {
+        cookie.set('visited', 'true')
         setVisited(true);
     }
 

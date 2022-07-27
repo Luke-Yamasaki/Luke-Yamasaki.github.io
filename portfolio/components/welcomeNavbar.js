@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import logo from '../public/images/LKY_Logo.png';
 import { NavLinks } from './navLinks.js';
+import { HamburgerMenu } from './hamburgerMenu';
 
 const altName = "Luke Yamasaki's logo";
 
@@ -29,6 +30,9 @@ export const NavBar = () => {
                             </div>
                         </a>
                     </Link>
+                </li>
+                <li className={`${styles.navItem} ${styles.navMenu}`}>
+                    <HamburgerMenu />
                 </li>
                 <li className={`${styles.navItem} ${styles.navLinks}`}>
                     <NavLinks />

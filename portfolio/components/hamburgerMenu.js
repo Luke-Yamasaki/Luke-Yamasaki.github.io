@@ -1,28 +1,50 @@
+import styles from '../styles/navigation.module.css';
+import { useState } from 'react';
+import Link from 'next/link';
 
-// export const HamburgerMenu = () => {
-//     return (
-//         <li className={`${styles.welcomeItem} ${mainStyles.navMenu}`}>
-//             <aside className={mainStyles.hamburgerContainer}>
-//                 <div className={mainStyles.hamburgerBox} onclick={handleMenu()}>
-//                     <div className={hamburgerLine{></di}>
-//                     <div className={hamburgerLine{></di}>
-//                     <div className={hamburgerLine{></di}>
-//                 </div>
-//                 <menu className={dropDownMenu}>
-//                     <a onclick='handleNavigation()' className={dropDownLink{ href={design.html}>
-//                         Design
-//                     </a>
-//                     <a onclick='handleNavigation()' className={dropDownLink{ href={development.html}>
-//                         Development
-//                     </a>
-//                     <a onclick='handleNavigation()' className={dropDownLink{ href={about.html}>
-//                         About
-//                     </a>
-//                     <a onclick='handleNavigation()' className={dropDownLink{ href={contact.html}>
-//                         Contact
-//                     </a>
-//                 </menu>
-//             </aside>
-//         </li>
-//     )
-// }
+export const HamburgerMenu = () => {
+    const [showMenu, setShowMenu] = useState(false);
+
+    const handleMenu = (e) => {
+        e.preventDefault();
+        setShowMenu(!showMenu);
+        return
+    }
+
+    const handleNavigation = (e) => {
+        e.preventDefault();
+        sessionStorage.visited = "true";
+    }
+
+    return (
+        <aside className={showMenu ? `${styles.hamburgerContainer} ${styles.shownContainer}` : styles.hamburgerContainer}>
+            <div className={showMenu ? `${styles.hamburgerBox} ${styles.shownBox}` : styles.hamburgerBox} onClick={handleMenu}>
+                <div className={showMenu ? `${styles.hamburgerLine} ${styles.shownOne}` : styles.hamburgerLine}></div>
+                <div className={showMenu ? `${styles.hamburgerLine} ${styles.shownTwo}` : styles.hamburgerLine}></div>
+                <div className={showMenu ? `${styles.hamburgerLine} ${styles.shownThree}` : styles.hamburgerLine}></div>
+            </div>
+            <menu className={showMenu ? `${styles.dropDownMenu} ${styles.menuShown}` : styles.dropDownMenu}>
+                <Link href='/design'>
+                    <a onClick={handleNavigation} className={showMenu ? `${styles.dropDownLink} ${styles.linkShown}` : styles.dropDownLink}>
+                        Design
+                    </a>
+                </Link>
+                <Link href='/development'>
+                    <a onClick={handleNavigation} className={showMenu ? `${styles.dropDownLink} ${styles.linkShown}` : styles.dropDownLink}>
+                        Development
+                    </a>
+                </Link>
+                <Link href='/about'>
+                    <a onClick={handleNavigation} className={showMenu ? `${styles.dropDownLink} ${styles.linkShown}` : styles.dropDownLink}>
+                        About
+                    </a>
+                </Link>
+                <Link href='/contact'>
+                    <a onClick={handleNavigation} className={showMenu ? `${styles.dropDownLink} ${styles.linkShown}` : styles.dropDownLink}>
+                        Contact
+                    </a>
+                </Link>
+            </menu>
+        </aside>
+    )
+}

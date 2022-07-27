@@ -31,7 +31,7 @@ export default function Layout({ children, home }) {
             </Head>
             {home ? (
                  <>
-                    {/* {visited &&
+                    {!visited &&
                         <div className={styles.anim}>
                             <Lottie
                                 animationData={openingLottie}
@@ -39,7 +39,7 @@ export default function Layout({ children, home }) {
                                 rendererSettings={{ preserveAspectRatio: 'xMidYMid slice' }}
                             />
                         </div>
-                    } */}
+                    }
                     <NavBar visited={visited}/>
                     <main className={visited ? styles.homeMain : styles.welcomeMain}>{children}</main>
                 </>

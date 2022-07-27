@@ -6,9 +6,19 @@
     "start": "next start"
   },
   "dependencies": {
+<<<<<<< HEAD
     "next": "latest",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-lottie-player": "^1.4.3"
+=======
+    "date-fns": "^2.11.1",
+    "gray-matter": "^4.0.2",
+    "next": "latest",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "remark": "^14.0.1",
+    "remark-html": "^15.0.0"
+>>>>>>> main
   }
 }
